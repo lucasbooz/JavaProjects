@@ -25,7 +25,7 @@ public class App {
                     System.out.println("2 - Layout do cinema");
                     System.out.println("3 - Sair");
                     System.out.println();
-                    System.out.println("Por favor selecione uma opção");
+                    System.out.print("Por favor selecione uma opção: ");
                     op = sc.nextInt();
 
                     if ((op < 1) || (op > 3)) {
@@ -65,6 +65,6 @@ public class App {
                 proc = sc.next().charAt(0);
             }
         }
-        System.out.println("Obrigado por usar CineFlix!");
+        System.out.print("Obrigado por usar CineFlix!");
     }
 }
