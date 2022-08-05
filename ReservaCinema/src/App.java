@@ -14,7 +14,7 @@ public class App {
 
                 for (int i = 1; i <= 9; i++) {
                     for (int j = 1; j <= 9; j++) {
-                        cinema[i][j] = "o";
+                        cinema[i][j] = "O";
                     }
                 }
                 do {
@@ -35,13 +35,23 @@ public class App {
                     switch (op) {
                         case 1:
                             System.out.println("Reservar");
+                            System.out.println();
                             System.out.println("Informe a fila[1-10]");
                             fila = sc.nextInt();
+
+                            if ((fila <= 0) || (fila > 10)) {
+                                System.err.println("Posição Inválida!");
+                            }
+
                             System.out.println("Informe a poltrona[1-10]");
                             poltrona = sc.nextInt();
 
-                            if (cinema[fila][poltrona] == "o") {
-                                cinema[fila][poltrona] = "X";
+                            if ((poltrona <= 0) || (poltrona > 10)) {
+                                System.err.println("Posição Inválida!");
+                            }
+
+                            if (cinema[fila][poltrona] == "O") {
+                                cinema[fila][poltrona] = "x";
                             } else {
                                 System.out.println();
                                 System.err.println("Poltrona já ocupada!");
