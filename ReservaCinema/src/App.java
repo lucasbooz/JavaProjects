@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) throws Exception {
         try (Scanner sc = new Scanner(System.in)) {
-            String[][] cinema = new String[10][10];
+            String[][] cinema = new String[11][11];
             int fila, poltrona, op;
             char proc;
 
@@ -12,8 +12,8 @@ public class App {
 
             while ((proc == 'S') || (proc == 's')) {
 
-                for (int i = 1; i <= 9; i++) {
-                    for (int j = 1; j <= 9; j++) {
+                for (int i = 1; i <= 10; i++) {
+                    for (int j = 1; j <= 10; j++) {
                         cinema[i][j] = "O";
                     }
                 }
@@ -60,18 +60,19 @@ public class App {
 
                         case 2:
                             System.out.println("Layout");
-                            for (int i = 1; i <= 9; i++) {
+                            for (int i = 1; i <= 10; i++) {
                                 System.out.println();
-                                for (int j = 1; j <= 9; j++) {
+                                for (int j = 1; j <= 10; j++) {
                                     System.out.print("" + cinema[i][j] + "");
                                 }
                             }
+                            System.out.println();
                             break;
                     }
 
                 } while (op != 3);
 
-                System.out.println("Deseja executar novamente o CineFlix[s/n]");
+                System.out.println("Deseja executar novamente o CineFlix?[s/n]");
                 proc = sc.next().charAt(0);
             }
         }
