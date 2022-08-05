@@ -29,7 +29,7 @@ public class App {
                     op = sc.nextInt();
 
                     if ((op < 1) || (op > 3)) {
-                        System.out.println("Opção Inválida!");
+                        System.err.println("Opção Inválida!");
                     }
 
                     switch (op) {
