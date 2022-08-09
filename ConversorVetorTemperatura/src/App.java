@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         MontaMenu montaMenu = new MontaMenu();
+        TelaAjuda telaAjuda = new TelaAjuda();
         float[] temperatura = new float[4];
         int[] hora = new int[4];
         int n;
@@ -29,8 +30,7 @@ public class App {
                         System.out.println("Temperatura em Celsius(ºC): " + ((fahrenheit - 32) / 1.8) + "ºC.");
                         break;
                     case 3:
-                        System.out.println("Fórmula ºC -> ºF: F = (C * 1.8) + 32");
-                        System.out.println("Fórmula ºF -> ºC: C = (F - 32) / 1.8");
+                        telaAjuda.telaAjuda();
                         break;
                 }
             } while (montaMenu.option != 4);
