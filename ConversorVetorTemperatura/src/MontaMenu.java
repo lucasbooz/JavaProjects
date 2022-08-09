@@ -5,6 +5,7 @@ public class MontaMenu {
     int option;
 
     public void montaMenu() {
+        System.out.println();
         System.out.println("1 - Celsius -> Fahrenheit");
         System.out.println("2 - Fahrenheit -> Celsius");
         System.out.println("3 - Ajuda");
