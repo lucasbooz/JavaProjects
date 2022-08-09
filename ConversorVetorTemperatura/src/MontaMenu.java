@@ -10,6 +10,7 @@ public class MontaMenu {
         System.out.println("3 - Ajuda");
         System.out.println("4 - Sair");
         System.out.println("Escolha uma opção acima: ");
+        System.out.println();
         option = sc.nextInt();
 
     }
