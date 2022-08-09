@@ -5,10 +5,7 @@ public class App {
         Scanner sc = new Scanner(System.in);
         MontaMenu montaMenu = new MontaMenu();
         TelaAjuda telaAjuda = new TelaAjuda();
-        float[] temperatura = new float[4];
-        int[] hora = new int[4];
-        int n;
-        float celsius, fahrenheit;
+        ArmazenaVetor armazenaVetor = new ArmazenaVetor();
         char proc;
 
         System.out.println("Deseja executar o sistema?[s/n]");
@@ -19,15 +16,10 @@ public class App {
 
                 switch (montaMenu.option) {
                     case 1:
-
-                        System.out.println("Informe a temperatura em Celsius(ºC): ");
-                        celsius = sc.nextFloat();
-                        System.out.println("Temperatura em Fahrenheit(ºF): " + ((celsius * 1.8f) + 32) + "ºF.");
+                        armazenaVetor.armazenaVetor();
                         break;
                     case 2:
-                        System.out.println("Informe a temperatura em Fahrenheit(ºF): ");
-                        fahrenheit = sc.nextFloat();
-                        System.out.println("Temperatura em Celsius(ºC): " + ((fahrenheit - 32) / 1.8) + "ºC.");
+                        armazenaVetor.armazenaVetor();
                         break;
                     case 3:
                         telaAjuda.telaAjuda();
