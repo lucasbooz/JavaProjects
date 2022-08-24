@@ -17,6 +17,6 @@ public class App {
                 proc = sc.next().charAt(0);
             }
         }
-        System.out.println("Obrigado por usar o sistema!");
+        System.out.println("Obrigado por usar o sistema! :)");
     }
 }
